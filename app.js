@@ -7,6 +7,10 @@ const PORT = 3000;
 
 serverConfig(app);
 
+const mainRoute = require('./Routes/mainRoute');
+
+app.use('/', mainRoute);
+
 app.listen(PORT, () => {
   console.log(`Server started on port ${PORT}`);
 });
