@@ -11,7 +11,7 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate({ Post, Order }) {
       this.belongsTo(Order, { foreignKey: 'id' });
-      this.belongsTo(Post, { foreignKey: 'id' });
+      this.belongsToMany(Post, { through: 'Postprod' });
     }
   }
   Product.init({

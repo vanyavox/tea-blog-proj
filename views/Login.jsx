@@ -5,7 +5,7 @@ module.exports = function Login({ title }) {
   return (
     <Layout title={title}>
       <div className='login'>
-        <form id='login' action='/login' method='post'>
+        <form id='loginForm' action='/login' method='post'>
           <p className='auth'>
             E-mail:
           </p>
@@ -13,7 +13,7 @@ module.exports = function Login({ title }) {
           <p className='auth'>
             Password:
           </p>
-          <input type='password' placeholder='Enter your password' />
+          <input type='password' minLength='5' placeholder='Enter your password' />
           <br />
           <p className='auth'>
             <button type='submit'>OK</button>

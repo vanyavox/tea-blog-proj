@@ -41,8 +41,8 @@ a:hover {
   color: white;
 }
 
-.headLinks {
-  padding-left: 5px;
+.headLinks > a {
+  margin-right: 5px;
 }
 
 .content {
@@ -126,4 +126,5 @@ button {
   margin-top: 5px;;
   padding: 5px;
   border: 1px solid black;
+  border-radius: 5px;
 }
