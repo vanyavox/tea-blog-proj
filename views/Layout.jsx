@@ -1,6 +1,6 @@
 const React = require('react');
-// const Head = require('./Header');
-// const Foot = require('./Footer');
+const Header = require('./Header');
+const Footer = require('./Footer');
 
 function Layout({ children, user, title }) {
   return (
@@ -13,9 +13,9 @@ function Layout({ children, user, title }) {
         <title>{title}</title>
       </head>
       <body>
-        {/* <Head user={user} /> */}
+        <Header user={user} />
         {children}
-        {/* <Foot /> */}
+        <Footer />
       </body>
     </html>
   );

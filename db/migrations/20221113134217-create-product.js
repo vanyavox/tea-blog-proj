@@ -7,10 +7,6 @@ module.exports = {
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER,
-        references: {
-          model: 'Products',
-          key: 'id',
-        },
       },
       productName: {
         type: Sequelize.TEXT,
