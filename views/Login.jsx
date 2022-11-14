@@ -19,6 +19,7 @@ module.exports = function Login({ title }) {
             <button type='submit'>OK</button>
           </p>
         </form>
+        <div className='errorBlock'></div>
       </div>
     </Layout>
   );

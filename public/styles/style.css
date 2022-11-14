@@ -88,7 +88,7 @@ p > img {
 }
 
 .login {
-  width: 60%;
+  width: 100%;
   background-color: #f5fffa;
   padding: 15px;
   border-radius: 10px;
@@ -108,12 +108,14 @@ input {
   padding: 5px;
   border-radius: 5px;
   border: none;
+  background-color: #f5fffa;
 }
 
-input:active {
+input:active, input:hover {
   padding: 5px;
   border-radius: 5px;
   border: none;
+  background-color: #f5fffa;
 }
 
 button:hover {
@@ -127,4 +129,12 @@ button {
   padding: 5px;
   border: 1px solid black;
   border-radius: 5px;
+}
+
+.errorBlock {
+  border: 2px solid #ff4500;
+  padding: 5px;
+  font-size: 10pt;
+  border-radius: 8px;
+  visibility: hidden;
 }

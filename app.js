@@ -1,18 +1,21 @@
 require('@babel/register');
+require('dotenv').config();
 const express = require('express');
-const serverConfig = require('./config/serverConfig');
+const configApp = require('./config/serverConfig');
 
 const app = express();
-const PORT = 3000;
+const port = process.env.PORT ?? 4000;
 
-serverConfig(app);
+configApp(app);
 
 const mainRoute = require('./Routes/mainRoute');
 const loginRoute = require('./Routes/loginRoute');
+const regRoute = require('./Routes/registrationRoute');
 
 app.use('/', mainRoute);
 app.use('/login', loginRoute);
+app.use('/reg', regRoute);
 
-app.listen(PORT, () => {
-  console.log(`Server started on port ${PORT}`);
+app.listen(port, () => {
+  console.log(`Server started on port ${port}`);
 });
