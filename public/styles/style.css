@@ -16,7 +16,7 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+.header > a:hover {
   color: black;
   background-color: white;
   border-radius: 8px;
@@ -41,8 +41,8 @@ a:hover {
   color: white;
 }
 
-.headLinks {
-  padding-left: 5px;
+.headLinks > a {
+  margin-right: 5px;
 }
 
 .content {
@@ -85,4 +85,79 @@ p > img {
   justify-content: space-between;
   align-items: center;
   padding: 15px;
+}
+
+.login {
+  width: 100%;
+  background-color: #f5fffa;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: center;
+  margin: auto;
+}
+
+.auth {
+  text-align: right;
+  font-size: 10pt;
+}
+
+input {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f5fffa;
+}
+
+input:active, input:hover {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f5fffa;
+}
+
+button:hover {
+  background-color: #32cd32;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+button {
+  margin-top: 5px;;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.headerName {
+  color: white;
+}
+
+.profile {
+  background-color: #ffa500;
+  padding: 5px;
+  border-radius: 10px;
+  color: white;
+  font-size: 10pt;
+}
+
+.profileLinks > a {
+  padding: 5px;
+}
+
+.profileLinks > a:hover {
+  color: white;
+  padding: none;
+  background-color: none;
+}
+
+.errorBlock {
+  border: 2px solid #ff4500;
+  padding: 5px;
+  font-size: 10pt;
+  border-radius: 8px;
+  visibility: hidden;
+  margin-top: 4px;
 }

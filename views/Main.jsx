@@ -1,11 +1,10 @@
 const React = require('react');
 const Layout = require('./Layout');
 
-function Main({ title, user }) {
+function Main({ title, name }) {
   return (
-    <Layout title={title} user={user}>
-      <div className="content">
-
+    <Layout title={title} name={name}>
+      {/* <div className="content">
         <div className="block">
           <p className="title">
             Title
@@ -38,7 +37,7 @@ function Main({ title, user }) {
             Description
           </p>
         </div>
-      </div>
+      </div> */}
 
     </Layout>
   );
