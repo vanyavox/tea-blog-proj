@@ -17,7 +17,7 @@ module.exports = function Registration({ title }) {
           <p className='auth'>
             Address:
           </p>
-          <input name='address' type='text' placeholder='Enter your addres' />
+          <input name='addres' type='text' placeholder='Enter your addres' />
           <p className='auth'>
             Password:
           </p>

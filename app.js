@@ -9,11 +9,11 @@ const port = process.env.PORT ?? 4000;
 configApp(app);
 
 const mainRoute = require('./Routes/mainRoute');
-const loginRoute = require('./Routes/loginRoute');
+const authRoute = require('./Routes/authRoute');
 const regRoute = require('./Routes/registrationRoute');
 
 app.use('/', mainRoute);
-app.use('/login', loginRoute);
+app.use('/auth', authRoute);
 app.use('/reg', regRoute);
 
 app.listen(port, () => {
