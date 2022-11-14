@@ -4,7 +4,7 @@ const Layout = require('./Layout');
 function Main({ title, user }) {
   return (
     <Layout title={title} user={user}>
-      <div className="content"/>
+      <div className="content">
 
         <div className="block">
           <p className="title">
@@ -38,6 +38,7 @@ function Main({ title, user }) {
             Description
           </p>
         </div>
+      </div>
 
     </Layout>
   );

@@ -8,7 +8,7 @@ function Layout({ children, user, title }) {
       <head>
         <meta charSet="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-        {/* <link href="/css/style.css" rel="stylesheet" /> */}
+        <link href="/styles/style.css" rel="stylesheet" />
         {/* <script defer src="/js/client.js" /> */}
         <title>{title}</title>
       </head>
