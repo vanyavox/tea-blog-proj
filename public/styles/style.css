@@ -86,3 +86,44 @@ p > img {
   align-items: center;
   padding: 15px;
 }
+
+.login {
+  width: 60%;
+  background-color: #f5fffa;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: center;
+  margin: auto;
+}
+
+.auth {
+  text-align: right;
+  font-size: 10pt;
+}
+
+input {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+input:active {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+button:hover {
+  background-color: #32cd32;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+button {
+  margin-top: 5px;;
+  padding: 5px;
+  border: 1px solid black;
+}

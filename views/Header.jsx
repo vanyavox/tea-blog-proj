@@ -10,7 +10,7 @@ module.exports = function Header({ user }) {
       </div>
       <div className="headerMenu">
         <div className="headLinks">
-          <a href="/auth">Вход</a>
+          <a href="/login">Вход</a>
           <a href="/reg">Регистрация</a>
         </div>
       </div>
